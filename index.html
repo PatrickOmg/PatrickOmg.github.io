@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio web</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Mi sitio web</h1>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Inicio</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Acerca de</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+          </ul>
+        </nav>
+        <button class="btn btn--menu" aria-label="Abrir menú"><span class="icon-menu"></span></button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Sección 1</h2>
+          <p class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien quis metus pharetra commodo sed ut nunc. Mauris at congue mauris.</p>
+          <button class="btn btn--primary">Haz clic aquí</button>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Sección 2</h2>
+          <p class="section__text">Phasellus vel facilisis purus. Sed faucibus finibus mi sed fringilla. Proin ac dolor ut elit posuere viverra.</p>
+          <button class="btn btn--primary">Haz clic aquí</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__text">Derechos de autor © 2023</p>
+      </div>
+    </footer>
+    <script src="js/app.min.js">
+        const btnMenu = document.querySelector('.btn--menu');
+const nav = document.querySelector('.nav');
+
+btnMenu.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+    </script>
+  </body>
+</html>
